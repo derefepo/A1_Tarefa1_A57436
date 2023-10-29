@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveShell : MonoBehaviour
-{
-    float speed = 1f;
-    // Start is called before the first frame update
+public class MoveShell : MonoBehaviour {
 
-    // Update is called once per frame
-    void Update()
-    {
-        this.transform.Translate(0, Time.deltaTime * speed * 0.5f, Time.deltaTime * speed);
+    public float speed = 1.0f;
+
+
+    void Update() {
+
+        transform.Translate(0.0f, 0.0f, Time.deltaTime * speed);
     }
 }
